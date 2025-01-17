@@ -1,0 +1,28 @@
+name: personal_assistant
+description: Kişisel asistan uygulaması
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^8.1.1+1  # Bu sürüm, linux hatalarını engelleyecek.
+  provider: ^6.1.2
+  http: ^1.2.2
+  timezone: ^0.8.0  # Bu sürüm flutter_local_notifications ile uyumlu.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/background.jpg
+    - assets/images/logo.png
+    - assets/icons/home_icon.png
+    - assets/icons/setting_icon.png
